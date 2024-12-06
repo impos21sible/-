@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.main.autoschoolnew.controllers.StudentCellController" style="-fx-padding: 10; -fx-border-color: #e0e0e0; -fx-border-width: 1; -fx-background-color: #f9f9f9;">
+    <children>
+        <ImageView fx:id="ImageViewPhoto" fitHeight="60" fitWidth="60" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);" />
+        <VBox spacing="8.0">
+            <children>
+                <Label fx:id="LabelName" text="Имя студента" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                <Label fx:id="LabelInstructor" text="Инструктор: Не назначен" style="-fx-font-size: 12px; -fx-text-fill: #606060;" />
+                <Label fx:id="LabelCategory" text="Категория: Не указана" style="-fx-font-size: 12px; -fx-text-fill: #606060;" />
+                <Label fx:id="LabelStatus" text="Статус: Неизвестен" style="-fx-font-size: 12px; -fx-text-fill: #606060;" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

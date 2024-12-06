@@ -1,0 +1,85 @@
+/* Основной стиль интерфейса */
+.root {
+    -fx-background-color: #fefae0; /* Светлый фон */
+    -fx-text-fill: #283618; /* Темный текст */
+}
+
+/* Кнопки */
+.button {
+    -fx-border-style: solid;
+    -fx-border-color: #bc6c25; /* Акцентный цвет */
+    -fx-background-color: #dda15e; /* Основной фоновый цвет кнопок */
+    -fx-padding: 8px 12px;
+    -fx-text-fill: #283618; /* Темный текст */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px; /* Закругленные края */
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #bc6c25; /* Темнее при наведении */
+    -fx-border-color: #283618; /* Контрастная обводка */
+    -fx-text-fill: #fefae0; /* Светлый текст */
+}
+
+/* Текстовые поля */
+.text-field {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #606c38; /* Основной зеленый */
+    -fx-background-color: #fefae0; /* Светлый фон */
+    -fx-text-fill: #283618; /* Темный текст */
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+/* Заголовки */
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-color: #606c38; /* Темный зеленый фон */
+    -fx-text-fill: #fefae0; /* Светлый текст */
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-radius: 5px; /* Закругленные края */
+}
+
+/* Панели */
+.panel {
+    -fx-background-color: #fefae0; /* Светлый фон */
+    -fx-border-color: #283618; /* Темный бордюр */
+    -fx-border-width: 2px;
+    -fx-padding: 15px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+/* Текстовые метки */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #283618;
+    -fx-font-weight: normal;
+}
+
+/* Поля для текста с фокусом */
+.text-field:focused {
+    -fx-border-color: #bc6c25; /* Цвет фокуса */
+    -fx-background-color: #fefae0;
+}
+
+/* Прокрутка */
+.scroll-pane {
+    -fx-background-color: #fefae0; /* Светлый фон */
+    -fx-border-color: #606c38; /* Основной зеленый */
+}
+
+/* Подсказки */
+.tooltip {
+    -fx-background-color: #bc6c25; /* Акцентный цвет */
+    -fx-text-fill: #fefae0; /* Светлый текст */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+}
