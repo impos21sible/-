@@ -1,9 +1,7 @@
-package org.main.autoschoolnew.controllers;
+package org.main.autoschoolnew.cell_controllers;
 
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import org.main.autoschoolnew.models.Student;

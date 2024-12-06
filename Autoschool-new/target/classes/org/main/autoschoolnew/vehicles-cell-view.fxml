@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.main.autoschoolnew.controllers.VehicleCellController" style="-fx-padding: 10; -fx-border-color: #e0e0e0; -fx-border-width: 1; -fx-background-color: #f9f9f9;">
+<HBox spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.main.autoschoolnew.cell_controllers.VehicleCellController" style="-fx-padding: 10; -fx-border-color: #e0e0e0; -fx-border-width: 1; -fx-background-color: #f9f9f9;">
     <children>
         <ImageView fx:id="ImageViewVehiclePhoto" fitHeight="60" fitWidth="60" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);" />
         <VBox spacing="8.0">

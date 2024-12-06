@@ -14,4 +14,6 @@ module org.main.autoschoolnew {
     exports org.main.autoschoolnew.controllers;
     opens org.main.autoschoolnew.controllers to javafx.fxml;
     opens org.main.autoschoolnew.util to org.hibernate.orm.core;
+    exports org.main.autoschoolnew.cell_controllers;
+    opens org.main.autoschoolnew.cell_controllers to javafx.fxml;
 }

@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import org.main.autoschoolnew.cell_controllers.VehicleCellController;
 import org.main.autoschoolnew.models.Vehicle;
 import org.main.autoschoolnew.service.VehicleService;
 import org.main.autoschoolnew.util.Manager;

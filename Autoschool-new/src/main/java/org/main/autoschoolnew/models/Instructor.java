@@ -151,4 +151,9 @@ public class Instructor {
     public void setCategories(Set<Category> categories) {
         this.categories = categories;
     }
+
+    // Метод для получения имени инструктора
+    public String getName() {
+        return getFullName();
+    }
 }

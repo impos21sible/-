@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import org.main.autoschoolnew.cell_controllers.StudentCellController;
 import org.main.autoschoolnew.models.Student;
 import org.main.autoschoolnew.models.Instructor;
 import org.main.autoschoolnew.service.StudentService;
@@ -289,5 +290,39 @@ public class MainWindowController implements Initializable {
 
 
     public void BtnGoToSchedulesAction(ActionEvent actionEvent) {
+        // Получаем текущую стадию (окно, на котором был клик по кнопке)
+        Stage currentStage = (Stage) BtnGoToInstructors.getScene().getWindow();
+
+        // Загружаем новый сцену (вид инструкторов)
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/main/autoschoolnew/schedules-view.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();  // Загружаем FXML
+        } catch (IOException e) {
+            e.printStackTrace();  // В случае ошибки выводим стек исключений
+        }
+
+        // Создаем новый объект Scene с загруженным root
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("base-styles.css");  // Добавляем стили
+
+        // Создаем новое окно (Stage) для страницы инструкторов
+        Stage instructorStage = new Stage();
+        instructorStage.setTitle("Schedules Page");  // Устанавливаем заголовок
+        instructorStage.setScene(scene);  // Устанавливаем сцену
+        instructorStage.setWidth(1000);   // Ширина нового окна
+        instructorStage.setHeight(600);   // Высота нового окна
+
+        // Обрабатываем закрытие нового окна
+        instructorStage.setOnCloseRequest(e -> {
+            currentStage.show();  // При закрытии нового окна показываем старое
+        });
+
+        // Прячем текущее окно (которое содержит кнопку)
+        currentStage.hide();
+
+        // Показываем новое окно
+        instructorStage.show();
+
     }
 }

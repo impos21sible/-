@@ -14,6 +14,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import org.main.autoschoolnew.cell_controllers.InstructorCellController;
 import org.main.autoschoolnew.models.Instructor;
 import org.main.autoschoolnew.service.InstructorService;
 import org.main.autoschoolnew.util.Manager;

@@ -25,5 +25,8 @@
         <mapping class="org.main.autoschoolnew.models.StudentStatus"/>
         <mapping class="org.main.autoschoolnew.models.Vehicle"/>
         <mapping class="org.main.autoschoolnew.models.VehicleType"/>
+        <mapping class="org.main.autoschoolnew.models.Schedule"/> <!-- Добавлено -->
+        <mapping class="org.main.autoschoolnew.models.Group"/> <!-- Добавлено -->
+
     </session-factory>
 </hibernate-configuration>
